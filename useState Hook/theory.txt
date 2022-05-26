@@ -1,2 +1,4 @@
 concept of React Hooks
 It is a way of being able to make our website interactive and actually having changeable state.
+
+Rule: We must use a hook inside a funtional component.So we have to create a function that renders a component and then inside that function we can use hooks.
