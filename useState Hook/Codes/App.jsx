@@ -2,7 +2,7 @@ import React, {useState} from "react";
 
 function App()
 {
-
+    //Destructuring concept of ES6
     const [count,setCount] = useState(0);
 
     function increase()
