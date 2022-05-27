@@ -1,1 +1,21 @@
+<input> HTML element have onChange method which calls each time when the input text changes. In React it will pass an event object to it's calling function.
 
+
+concept of controlled components/ Single source of truth:
+
+In HTML, form elements such as <input>, <textarea>, and <select> typically maintain their own state and update it based on user input. In React, mutable state is typically kept in the state property of components, and only updated with setState().
+
+We can combine the two by making the React state be the “single source of truth”. Then the React component that renders a form also controls what happens in that form on subsequent user input. An input form element whose value is controlled by React in this way is called a “controlled component”.
+
+<form> element defaul behaviour:
+
+form refreshes the page after submitting the form (for eg. after making POST/GET requests). In case we want to prevent it in that case we can do it by following way
+
+function handleSubmit(event)
+{
+  // after doing all tasks
+  .
+  .
+  .
+  event.preventDefault();
+}
